@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyframes Animation Example</title>
+<style>
+  @keyframes example {
+    0% {
+      opacity: 0.2;
+      transform: translateY(0px) rotate(0deg);
+      background-color: red;
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(0) rotate(180deg);
+      background-color: blue;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(500px) rotate(360deg);
+      background-color: green;
+    }
+  }
+
+  .element {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+</style>
+</head>
+<body>
+  <div class="element"></div>
+</body>
+</html>
